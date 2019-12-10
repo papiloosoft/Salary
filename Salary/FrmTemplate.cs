@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,17 @@ using System.Windows.Forms;
 
 namespace Salary
 {
-    public partial class Form1 : Form
+    public partial class FrmTemplate : MetroForm
     {
-        public Form1()
+        public FrmTemplate()
         {
             InitializeComponent();
+            this.StyleManager = metroStyleManager1;
+        }
+
+        private void FrmTemplate_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
